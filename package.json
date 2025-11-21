@@ -1,0 +1,45 @@
+{
+  "name": "unit-conversion-hints",
+  "displayName": "Unit Conversion Hints",
+  "description": "Shows unit conversion hints (rem ↔ px, and more) in various file types as inline comments and hover tooltips",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:json",
+    "onLanguage:jsonc"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Unit Conversion Hints",
+      "properties": {
+        "unitConversionHints.showHover": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show unit conversion hints in hover tooltips"
+        },
+        "unitConversionHints.remToPx.baseFontSize": {
+          "type": "number",
+          "default": 16,
+          "description": "Base font size in pixels for rem ↔ px conversions (default: 16px = 1rem)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  }
+}
+
