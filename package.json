@@ -2,6 +2,10 @@
   "name": "unit-conversion-hints",
   "displayName": "Unit Conversion Hints",
   "description": "Shows unit conversion hints (rem ↔ px, and more) in various file types as inline comments and hover tooltips",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unscripted/unit-conversion-hints"
+  },
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.74.0"
